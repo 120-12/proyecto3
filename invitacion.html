@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Hipervínculos</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 10px 20px; 
+            margin: 0; 
+            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Imagen de estudiantes */
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+        }
+        button { 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            border-color: #0056b3; 
+            background-color: #e6f0ff; 
+            cursor: pointer; 
+        }
+        button:hover { 
+            background-color: #0056b3; 
+            color: white; 
+        }
+        .hidden { 
+            display: none; 
+        }
+        .greeting { 
+            font-size: 1.5em; 
+            color: #ff69b4; /* Rosa bonito */
+            margin: 20px 0; 
+            font-style: italic; 
+            text-shadow: 1px 1px 2px #000; /* Sombra negra para contraste */
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #0056b3;
+        }
+        .error-message {
+            display: none;
+            color: #ff0000; /* Rojo para error */
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        #login, #content, #error {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            padding: 20px;
+            border-radius: 10px; /* Corregido: añadido dos puntos y valor */
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const login = document.getElementById("login");
+            const content = document.getElementById("content");
+            const error = document.getElementById("error");
+            if (password === "hipervinculos2024") {
+                login.style.display = "none";
+                content.classList.remove("hidden");
+            } else {
+                login.style.display = "none";
+                error.style.display = "block";
+            }
+        }
+        function resetLogin() {
+            const login = document.getElementById("login");
+            const error = document.getElementById("error");
+            const content = document.getElementById("content");
+            error.style.display = "none";
+            login.style.display = "block";
+            document.getElementById("password").value = ""; // Limpia el campo de contraseña
+        }
+    </script>
+</head>
+<body>
+    <div id="login">
+        <h1>Diseño Web</h1>
+        <h2>Instituto Misioneros Monfortianos del DSI</h2>
+        <p>🔒 Acceso a Noticias</p>
+        <p>Por favor, ingresa la contraseña para ver el contenido:</p>
+        <input type="password" id="password" placeholder="Contraseña">
+        <br>
+        <button onclick="checkPassword()">Ingresar</button>
+    </div>
+    <div id="content" class="hidden">
+        <h1>Diseño Web</h1>
+        <h2>Instituto Misioneros Monfortianos del DSI</h2>
+        <div class="greeting">
+            🌟 ¡Hola, bienvenid@ a las Noticias! 🌟<br>
+            Espero que disfrutes explorando este ejercicio. 💖
+        </div>
+        <h1>Noticias</h1>
+        <p><a href="pagina1.html">Retornar</a></p>
+        <p>
+            <a href="index.html">Volver al índice</a> | 
+            <a href="pagina3.html">Ejercicio 2</a> | 
+            <a href="pagina4.html">Ejercicio 3</a> | 
+            <a href="pagina5.html">Ejercicio 4</a> | 
+            <a href="pagina6.html">Ejercicio 5</a> | 
+            <a href="pagina7.html">Ejercicio 6</a> | 
+            <a href="pagina_ejercicio7.html">Ejercicio 7</a>
+        </p>
+    </div>
+    <div id="error" class="error-message">
+        <p>❌ Contraseña incorrecta. Intenta de nuevo.</p>
+        <button onclick="resetLogin()">Nuevo ingreso</button>
+    </div>
+</body>
+</html>

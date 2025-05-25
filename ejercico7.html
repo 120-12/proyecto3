@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los tres pilares de la Web</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            background-color: #FFEB3B; /* Fondo amarillo */
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+        }
+        h1 {
+            color: #333; /* Gris oscuro para el título principal */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000; /* Sombra negra para legibilidad */
+            font-size: 2.5em /* Tamaño grande para el título */
+        }
+        h2 {
+            font-size: 2em; /* Tamaño grande para los subtítulos */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .html-section h2 {
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #e53935; /* Rojo para el fondo del subtítulo */
+        }
+        .http-section h2 {
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #1e88e5; /* Azul para el fondo del subtítulo */
+        }
+        .url-section h2 {
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #43a047; /* Verde para el fondo del subtítulo */
+        }
+        .menu-item {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px; /* Esquinas ovaladas */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s; /* Efecto suave al pasar el cursor */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para contraste */
+        }
+        .menu-item:hover {
+            transform: scale(1.05); /* Aumenta ligeramente al pasar el cursor */
+        }
+        /* Colores diferentes para cada ejercicio */
+        .ejercicio1 { background-color: rgba(255, 107, 107, 0.9); } /* Rojo claro */
+        .ejercicio2 { background-color: #39FF14; } /* Verde eléctrico */
+        .ejercicio3 { background-color: rgba(69, 183, 209, 0.9); } /* Azul celeste */
+        .ejercicio4 { background-color: #FFEB3B; } /* Amarillo */
+        .ejercicio5 { background-color: rgba(255, 238, 173, 0.9); color: #333; } /* Amarillo claro (texto oscuro) */
+        .ejercicio6 { background-color: rgba(212, 165, 165, 0.9); } /* Rosa pálido */
+        .ejercicio7 { background-color: rgba(155, 89, 182, 0.9); } /* Morado */
+        a.link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px; /* Esquinas ovaladas */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s; /* Efecto suave al pasar el cursor */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para contraste */
+        }
+        a.link:hover {
+            transform: scale(1.05); /* Aumenta ligeramente al pasar el cursor */
+        }
+        .html-section p {
+            background-color: rgba(229, 57, 53, 0.2); /* Fondo rojo claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+        .http-section p {
+            background-color: rgba(30, 136, 229, 0.2); /* Fondo azul claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+        .url-section p {
+            background-color: rgba(67, 160, 71, 0.2); /* Fondo verde claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Los tres pilares de la Web</h1>
+    <p>
+        <a href="http://es.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank" class="link">Tim Berners-Lee</a> 
+        es considerado el padre de la <a href="http://es.wikipedia.org/wiki/World_Wide_Web" target="_blank" class="link">Web</a> 
+        porque desarrolló los tres elementos básicos para el funcionamiento de la Web:
+    </p>
+    <div>
+        <a href="#html" class="link">HTML</a><br>
+        <a href="#http" class="link">HTTP</a><br>
+        <a href="#url" class="link">URL</a><br>
+    </div>
+    <a name="html"></a>
+    <div class="html-section">
+        <h2>HTML</h2>
+        <p>
+            HTML, siglas de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web. 
+            Es un estándar que sirve de referencia para la elaboración de páginas web en sus diferentes versiones, define una estructura básica 
+            y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, entre otros. 
+            Es un estándar a cargo de la W3C, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, 
+            sobre todo en lo referente a su escritura e interpretación. Es el lenguaje con el que se definen las páginas web.
+        </p>
+        <p>Fuente: <a href="http://es.wikipedia.org/wiki/HTML" target="_blank" class="link">HTML, Wikipedia</a></p>
+    </div>
+    <a name="http"></a>
+    <div class="http-section">
+        <h2>HTTP</h2>
+        <p>
+            Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo usado en cada transacción 
+            de la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force, colaboración que 
+            culminó en 1999 con la publicación de una serie de RFC, el más importante de ellos es el RFC 2616 que especifica la versión 1.1.
+        </p>
+        <p>Fuente: <a href="http://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" class="link">HTTP, Wikipedia</a></p>
+    </div>
+    <a name="url"></a>
+    <div class="url-section">
+        <h2>URL</h2>
+        <p>
+            Un localizador de recursos uniforme o URL - siglas en inglés de Uniform Resource Locator- es un identificador de recursos uniforme (URI) 
+            cuyos recursos referidos pueden cambiar, esto es, la dirección puede apuntar a recursos variables en el tiempo. Están formados por una 
+            secuencia de caracteres, de acuerdo a un formato modélico y estándar, que designa recursos en una red, como Internet.
+        </p>
+        <p>Fuente: <a href="http://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme" target="_blank" class="link">URL, Wikipedia</a></p>
+    </div>
+    <p>
+        <a href="index.html" class="menu-item ejercicio1">Volver al índice</a> | 
+        <a href="pagina1.html" class="menu-item ejercicio1">Ejercicio 1</a> | 
+        <a href="pagina3.html" class="menu-item ejercicio3">Ejercicio 2</a> | 
+        <a href="pagina4.html" class="menu-item ejercicio4">Ejercicio 3</a> | 
+        <a href="pagina5.html" class="menu-item ejercicio5">Ejercicio 4</a> | 
+        <a href="pagina6.html" class="menu-item ejercicio6">Ejercicio 5</a> | 
+        <a href="pagina7.html" class="menu-item ejercicio7">Ejercicio 6</a>
+    </p>
+</body>
+</html>

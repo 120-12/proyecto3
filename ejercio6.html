@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Anclas en otra página</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            background-color: #27c0ce; /* Fondo amarillo */
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+        }
+        h1 { 
+            color: #f3dcdc; /* Gris oscuro para el título principal */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000; /* Sombra negra para legibilidad */
+            font-size: 2.5em; /* Tamaño grande para el título */
+        }
+        h2 { 
+            font-size: 2em; /* Tamaño grande para los subtítulos */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .intro-section h2 { 
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #FF5722; /* Naranja para el fondo del subtítulo */
+        }
+        .databases-section h2 { 
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #2196F3; /* Azul para el fondo del subtítulo */
+        }
+        .table-section h2 { 
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #4CAF50; /* Verde para el fondo del subtítulo */
+        }
+        .load-section h2 { 
+            color: #fff; /* Blanco para el texto del subtítulo */
+            background-color: #9C27B0; /* Morado para el fondo del subtítulo */
+        }
+        .menu-item {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px; /* Esquinas ovaladas */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s; /* Efecto suave al pasar el cursor */
+            background-color: rgba(213, 234, 27, 0.8); /* Fondo semitransparente para contraste */
+        }
+        .menu-item:hover {
+            transform: scale(1.05); /* Aumenta ligeramente al pasar el cursor */
+        }
+        /* Colores diferentes para cada ejercicio */
+        .ejercicio1 { background-color: rgba(255, 107, 107, 0.9); } /* Rojo claro */
+        .ejercicio2 { background-color: #39FF14; } /* Verde eléctrico */
+        .ejercicio3 { background-color: rgba(69, 183, 209, 0.9); } /* Azul celeste */
+        .ejercicio4 { background-color: #FFEB3B; } /* Amarillo */
+        .ejercicio5 { background-color: rgba(255, 238, 173, 0.9); color: #333; } /* Amarillo claro (texto oscuro) */
+        .ejercicio6 { background-color: rgba(212, 165, 165, 0.9); } /* Rosa pálido */
+        .ejercicio7 { background-color: rgba(155, 89, 182, 0.9); } /* Morado */
+        a.link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px; /* Esquinas ovaladas */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s; /* Efecto suave al pasar el cursor */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para contraste */
+        }
+        a.link:hover {
+            transform: scale(1.05); /* Aumenta ligeramente al pasar el cursor */
+        }
+        .intro-section p {
+            background-color: rgba(255, 87, 34, 0.2); /* Fondo naranja claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+        .databases-section p {
+            background-color: rgba(33, 150, 243, 0.2); /* Fondo azul claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+        .table-section p {
+            background-color: rgba(76, 175, 80, 0.2); /* Fondo verde claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+        .load-section p {
+            background-color: rgba(156, 39, 176, 0.2); /* Fondo morado claro para los párrafos */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tutorial de MySQL</h1>
+    <a href="pagina8.html#introduccion"><button>Introducción</button></a><br>
+    <a href="pagina8.html#mostrarbasedatos"><button>show databases</button></a><br>
+    <a href="pagina8.html#creaciontabla"><button>Creación de una tabla y mostrar sus campos</button></a><br>
+    <a href="pagina8.html#cargarregistros"><button>Carga de registros a una tabla y su recuperación</button></a><br>
+    <p><a href="index.html">Volver al índice</a> | <a href="pagina1.html">Ejercicio 1</a> | <a href="pagina3.html">Ejercicio 2</a> | <a href="pagina4.html">Ejercicio 3</a> | <a href="pagina5.html">Ejercicio 4</a> | <a href="pagina6.html">Ejercicio 5</a> | <a href="pagina_ejercicio7.html">Ejercicio 7</a></p>
+</body>
+</html>

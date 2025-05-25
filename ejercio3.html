@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Hipervínculos con atributo target</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            background-color: #007BFF; /* Color de fondo azul */
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+        }
+        h1 {
+            color: #fff; /* Blanco para contraste */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000; /* Sombra negra para legibilidad */
+        }
+        .menu-item {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px; /* Esquinas ovaladas */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s; /* Efecto suave al pasar el cursor */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para contraste */
+        }
+        .menu-item:hover {
+            transform: scale(1.05); /* Aumenta ligeramente al pasar el cursor */
+        }
+        /* Colores diferentes para cada ejercicio */
+        .ejercicio1 { background-color: rgba(255, 107, 107, 0.9); } /* Rojo claro */
+        .ejercicio2 { background-color: #39FF14; } /* Verde eléctrico */
+        .ejercicio3 { background-color: rgba(69, 183, 209, 0.9); } /* Azul celeste */
+        .ejercicio4 { background-color: rgba(150, 206, 180, 0.9); } /* Verde pastel */
+        .ejercicio5 { background-color: rgba(255, 238, 173, 0.9); color: #333; } /* Amarillo claro (texto oscuro) */
+        .ejercicio6 { background-color: rgba(212, 165, 165, 0.9); } /* Rosa pálido */
+        .ejercicio7 { background-color: rgba(155, 89, 182, 0.9); } /* Morado */
+        a.google-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000; /* Sombra para legibilidad */
+        }
+        a.google-link:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        ul {
+            list-style-type: none; /* Elimina viñetas */
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apertura de enlaces en el mismo navegador y en otra instancia</h1>
+    <p>
+        <a href="https://elcomercio.pe/" class="menu-item ejercicio2">Diario El Comercio</a><br>
+        <a href="https://elperuano.pe/" target="_blank" class="menu-item ejercicio2">Diario oficial El Peruano</a>
+    </p>
+    <p>
+        <a href="index.html" class="menu-item ejercicio1">Volver al índice</a> | 
+        <a href="pagina1.html" class="menu-item ejercicio1">Ejercicio 1</a> | 
+        <a href="pagina3.html" class="menu-item ejercicio3">Ejercicio 2</a> | 
+        <a href="pagina5.html" class="menu-item ejercicio4">Ejercicio 4</a> | 
+        <a href="pagina6.html" class="menu-item ejercicio5">Ejercicio 5</a> | 
+        <a href="pagina7.html" class="menu-item ejercicio6">Ejercicio 6</a> | 
+        <a href="pagina_ejercicio7.html" class="menu-item ejercicio7">Ejercicio 7</a>
+    </p>
+</body>
+</html>
