@@ -1,5 +1,9 @@
-git init
-git add .
-git commit -m "Subida inicial del Proyecto 3"
-git remote add origin https://github.com/TuUsuario/Proyecto3-AnaPaolita.git
-git push -u origin main
+<p>
+    <a href="index.html">Volver al índice</a> | 
+    <a href="ejercicio2.html">Ejercicio 2</a> | 
+    <a href="ejercicio3.html">Ejercicio 3</a> | 
+    <a href="ejercicio4.html">Ejercicio 4</a> | 
+    <a href="ejercicio5.html">Ejercicio 5</a> | 
+    <a href="ejercicio6.html">Ejercicio 6</a> | 
+    <a href="ejercicio7.html">Ejercicio 7</a>
+</p>
