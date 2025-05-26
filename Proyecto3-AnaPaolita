@@ -55,3 +55,6 @@
     <p style="color: red;">esto es un parrafo de color rojo</p>
 </body>
 </html>
+git add .
+git commit -m "Actualizar index.html con botones y estilos para Proyecto3-AnaPaolita"
+git push origin main
