@@ -1,5 +1,57 @@
-git init
-git add .
-git commit -m "Subida inicial del Proyecto 3"
-git remote add origin https://github.com/TuUsuario/Proyecto3-AnaPaolita.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Índice - Proyecto 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .button {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+        }
+        h1 {
+            color: red; /* Título en rojo */
+        }
+        a {
+            color: blue; /* Enlaces en azul */
+            text-decoration: underline;
+        }
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clase 04, Los botones redirigen a los ejercicios de la clase</h1>
+
+    <!-- Botones para los ejercicios -->
+    <a href="ejercicio1.html" class="button">Abrir Ejercicio 1</a>
+    <a href="ejercicio2.html" class="button">Abrir Ejercicio 2</a>
+    <a href="ejercicio3.html" class="button">Abrir Ejercicio 3</a>
+
+    <!-- Enlace al repositorio -->
+    <p>GitHub repository: <a href="https://github.com/toniassul/webDesign/tree/main/clase04/Proyecto3-AnaPaolita">https://github.com/toniassul/webDesign/tree/main/clase04/Proyecto3-AnaPaolita</a></p>
+
+    <!-- Enlaces a los ejercicios -->
+    <p><strong>ENLACE A REPOSITORIO</strong></p>
+    <p><a href="ejercicio1.html">Enlace al ejercicio 1</a></p>
+    <p><a href="ejercicio2.html">Enlace al ejercicio 2</a></p>
+    <p><a href="ejercicio3.html">Enlace al ejercicio 3</a></p>
+
+    <!-- Nota en rojo -->
+    <p style="color: red;">esto es un parrafo de color rojo</p>
+</body>
+</html>
